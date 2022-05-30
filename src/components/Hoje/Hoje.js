@@ -7,7 +7,7 @@ import { useContext } from "react";
 import UserContext from "../../contexts/UserContext";
 import Header from "../shared/Header"
 import Menu from '../shared/Menu';
-
+import GlobalStyle from "../../assets/css/globalStyles";
 
 export default function Hoje(){
     const{token,foto}=useContext(UserContext)
@@ -67,7 +67,7 @@ useEffect(() => {
 
     return(
         <>
-        
+        <GlobalStyle/>
         <Header/>
         <Dia>
          <h1>{dia}, {data}</h1>  

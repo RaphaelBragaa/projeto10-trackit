@@ -10,21 +10,23 @@ export default function Menu(){
     return(
         <>
          <Footer>
-               <Link to="/habitos"><h1>Hábitos</h1></Link>
-               <Bola label="Background">
-            <CircularProgressbar
-                value={percentage}
-                text={`Hoje`}
-                background
-                backgroundPadding={6}
-                styles={buildStyles({
-                backgroundColor: "#52B6FF",
-                textColor: "#fff",
-                pathColor: "#fff",
-                trailColor: "transparent"
-                })}
-            />
-        </Bola>
+            <Link to="/habitos"><h1>Hábitos</h1></Link>
+            <Link to="/hoje">
+                <Bola label="Background">
+                    <CircularProgressbar
+                        value={percentage}
+                        text={`Hoje`}
+                        background
+                        backgroundPadding={6}
+                        styles={buildStyles({
+                        backgroundColor: "#52B6FF",
+                        textColor: "#fff",
+                        pathColor: "#fff",
+                        trailColor: "transparent"
+                        })}
+                    />
+                </Bola>
+            </Link>
         <h1>Histórico</h1>
         
         </Footer>
@@ -43,6 +45,7 @@ const Footer = styled.footer`
     bottom: 0;
     position: fixed;
     height:70px;
+    background-color:#FFFFFF;
     
 
     font-family:'Lexend Deca', sans-serif;
@@ -52,7 +55,7 @@ const Footer = styled.footer`
         font-size:17.98px;
     }
 
-   
+
 }
 `
 

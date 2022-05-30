@@ -30,7 +30,7 @@ export default function Login(){
 
         promise
             .then(res => {
-            console.log(res.data)
+            localStorage.getItem(res.data)
             setFoto(res.data.image)
             setToken(res.data.token)
             navigate("/hoje")
